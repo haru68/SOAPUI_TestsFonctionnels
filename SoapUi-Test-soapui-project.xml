@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9287aaea-5ba9-45a8-bd17-78d8d20f773d" activeEnvironment="Default" name="SoapUi_Test" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="337ab414-c9da-47f7-81d4-94150d83ac7c" wsaVersion="NONE" name="TextCasingSoapBinding" type="wsdl" bindingName="{http://www.dataaccess.com/webservicesserver/}TextCasingSoapBinding" soapVersion="1_1" anonymous="optional" definition="file:/C:/Users/Sartori/Documents/WCS/Quêtes/API/SOAPUI/TextCasing.wso" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings><con:setting id="CreateWsdlDocumentationAction@report-directory">C:\Users\Sartori\Documents\WCS\Quêtes\API\SOAPUI</con:setting></con:settings><con:definitionCache type="TEXT" rootPart="file:\C:\Users\Sartori\Documents\WCS\Quêtes\API\SOAPUI\TextCasing.wso"><con:part><con:url>file:\C:\Users\Sartori\Documents\WCS\Quêtes\API\SOAPUI\TextCasing.wso</con:url><con:content><![CDATA[<definitions name="TextCasing" targetNamespace="http://www.dataaccess.com/webservicesserver/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.dataaccess.com/webservicesserver/">
+  <types>
+    <xs:schema elementFormDefault="qualified" targetNamespace="http://www.dataaccess.com/webservicesserver/">
+      <xs:element name="TitleCaseWordsWithToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sText" type="xs:string"/>
+            <xs:element name="sToken" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TitleCaseWordsWithTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="TitleCaseWordsWithTokenResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InvertStringCase">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sAString" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InvertStringCaseResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="InvertStringCaseResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InvertCaseFirstAdjustStringToPrevious">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sAString" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InvertCaseFirstAdjustStringToPreviousResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="InvertCaseFirstAdjustStringToPreviousResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InvertCaseFirstAdjustStringToCurrent">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sAString" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InvertCaseFirstAdjustStringToCurrentResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="InvertCaseFirstAdjustStringToCurrentResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllUppercaseWithToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sAString" type="xs:string"/>
+            <xs:element name="sToken" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllUppercaseWithTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="AllUppercaseWithTokenResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllLowercaseWithToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sAString" type="xs:string"/>
+            <xs:element name="sToken" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="AllLowercaseWithTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="AllLowercaseWithTokenResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UppercaseWordsWithToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sAString" type="xs:string"/>
+            <xs:element name="sToken" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="UppercaseWordsWithTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="UppercaseWordsWithTokenResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LowercaseWordsWithToken">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sAString" type="xs:string"/>
+            <xs:element name="sToken" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="LowercaseWordsWithTokenResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="LowercaseWordsWithTokenResult" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </types>
+  <message name="TitleCaseWordsWithTokenSoapRequest">
+    <part name="parameters" element="tns:TitleCaseWordsWithToken"/>
+  </message>
+  <message name="TitleCaseWordsWithTokenSoapResponse">
+    <part name="parameters" element="tns:TitleCaseWordsWithTokenResponse"/>
+  </message>
+  <message name="InvertStringCaseSoapRequest">
+    <part name="parameters" element="tns:InvertStringCase"/>
+  </message>
+  <message name="InvertStringCaseSoapResponse">
+    <part name="parameters" element="tns:InvertStringCaseResponse"/>
+  </message>
+  <message name="InvertCaseFirstAdjustStringToPreviousSoapRequest">
+    <part name="parameters" element="tns:InvertCaseFirstAdjustStringToPrevious"/>
+  </message>
+  <message name="InvertCaseFirstAdjustStringToPreviousSoapResponse">
+    <part name="parameters" element="tns:InvertCaseFirstAdjustStringToPreviousResponse"/>
+  </message>
+  <message name="InvertCaseFirstAdjustStringToCurrentSoapRequest">
+    <part name="parameters" element="tns:InvertCaseFirstAdjustStringToCurrent"/>
+  </message>
+  <message name="InvertCaseFirstAdjustStringToCurrentSoapResponse">
+    <part name="parameters" element="tns:InvertCaseFirstAdjustStringToCurrentResponse"/>
+  </message>
+  <message name="AllUppercaseWithTokenSoapRequest">
+    <part name="parameters" element="tns:AllUppercaseWithToken"/>
+  </message>
+  <message name="AllUppercaseWithTokenSoapResponse">
+    <part name="parameters" element="tns:AllUppercaseWithTokenResponse"/>
+  </message>
+  <message name="AllLowercaseWithTokenSoapRequest">
+    <part name="parameters" element="tns:AllLowercaseWithToken"/>
+  </message>
+  <message name="AllLowercaseWithTokenSoapResponse">
+    <part name="parameters" element="tns:AllLowercaseWithTokenResponse"/>
+  </message>
+  <message name="UppercaseWordsWithTokenSoapRequest">
+    <part name="parameters" element="tns:UppercaseWordsWithToken"/>
+  </message>
+  <message name="UppercaseWordsWithTokenSoapResponse">
+    <part name="parameters" element="tns:UppercaseWordsWithTokenResponse"/>
+  </message>
+  <message name="LowercaseWordsWithTokenSoapRequest">
+    <part name="parameters" element="tns:LowercaseWordsWithToken"/>
+  </message>
+  <message name="LowercaseWordsWithTokenSoapResponse">
+    <part name="parameters" element="tns:LowercaseWordsWithTokenResponse"/>
+  </message>
+  <portType name="TextCasingSoapType">
+    <operation name="TitleCaseWordsWithToken">
+      <input message="tns:TitleCaseWordsWithTokenSoapRequest"/>
+      <output message="tns:TitleCaseWordsWithTokenSoapResponse"/>
+    </operation>
+    <operation name="InvertStringCase">
+      <documentation>Uppercase letters that are lowercase and lowercase letters that are uppercase.</documentation>
+      <input message="tns:InvertStringCaseSoapRequest"/>
+      <output message="tns:InvertStringCaseSoapResponse"/>
+    </operation>
+    <operation name="InvertCaseFirstAdjustStringToPrevious">
+      <documentation>Invert the casing of the first letter and adjust the string to conform with the previous casing of first letter.</documentation>
+      <input message="tns:InvertCaseFirstAdjustStringToPreviousSoapRequest"/>
+      <output message="tns:InvertCaseFirstAdjustStringToPreviousSoapResponse"/>
+    </operation>
+    <operation name="InvertCaseFirstAdjustStringToCurrent">
+      <documentation>Invert the casing of the first letter and adjust the string to conform with the current casing of first letter.</documentation>
+      <input message="tns:InvertCaseFirstAdjustStringToCurrentSoapRequest"/>
+      <output message="tns:InvertCaseFirstAdjustStringToCurrentSoapResponse"/>
+    </operation>
+    <operation name="AllUppercaseWithToken">
+      <documentation>Change string to uppercase adding token between characters.</documentation>
+      <input message="tns:AllUppercaseWithTokenSoapRequest"/>
+      <output message="tns:AllUppercaseWithTokenSoapResponse"/>
+    </operation>
+    <operation name="AllLowercaseWithToken">
+      <documentation>Change string to lowercase adding token between characters.</documentation>
+      <input message="tns:AllLowercaseWithTokenSoapRequest"/>
+      <output message="tns:AllLowercaseWithTokenSoapResponse"/>
+    </operation>
+    <operation name="UppercaseWordsWithToken">
+      <documentation>Change string to uppercase adding token between characters of each word.</documentation>
+      <input message="tns:UppercaseWordsWithTokenSoapRequest"/>
+      <output message="tns:UppercaseWordsWithTokenSoapResponse"/>
+    </operation>
+    <operation name="LowercaseWordsWithToken">
+      <documentation>Change string to lowercase adding token between characters of each word.</documentation>
+      <input message="tns:LowercaseWordsWithTokenSoapRequest"/>
+      <output message="tns:LowercaseWordsWithTokenSoapResponse"/>
+    </operation>
+  </portType>
+  <binding name="TextCasingSoapBinding" type="tns:TextCasingSoapType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="TitleCaseWordsWithToken">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="InvertStringCase">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="InvertCaseFirstAdjustStringToPrevious">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="InvertCaseFirstAdjustStringToCurrent">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllUppercaseWithToken">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllLowercaseWithToken">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="UppercaseWordsWithToken">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LowercaseWordsWithToken">
+      <soap:operation soapAction="" style="document"/>
+      <input>
+        <soap:body use="literal"/>
+      </input>
+      <output>
+        <soap:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="TextCasingSoapBinding12" type="tns:TextCasingSoapType">
+    <soap12:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="TitleCaseWordsWithToken">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="InvertStringCase">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="InvertCaseFirstAdjustStringToPrevious">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="InvertCaseFirstAdjustStringToCurrent">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllUppercaseWithToken">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="AllLowercaseWithToken">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="UppercaseWordsWithToken">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="LowercaseWordsWithToken">
+      <soap12:operation soapAction="" style="document"/>
+      <input>
+        <soap12:body use="literal"/>
+      </input>
+      <output>
+        <soap12:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="TextCasing">
+    <documentation>The Text Casing Web Service, implemented with DataFlex, provides functions to change text casing in different ways.</documentation>
+    <port name="TextCasingSoap" binding="tns:TextCasingSoapBinding">
+      <soap:address location="https://www.dataaccess.com/webservicesserver/TextCasing.wso"/>
+    </port>
+    <port name="TextCasingSoap12" binding="tns:TextCasingSoapBinding12">
+      <soap12:address location="https://www.dataaccess.com/webservicesserver/TextCasing.wso"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint></con:endpoints><con:operation id="6a348e09-3174-43fa-828f-fe27ab948253" isOneWay="false" action="" name="AllLowercaseWithToken" bindingOperationName="AllLowercaseWithToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="dfb912a4-5199-4a81-86da-9c3aa8e3ce88" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:AllLowercaseWithToken>\r
+         <web:sAString>La peche du jour</web:sAString>\r
+         <web:sToken>est orange</web:sToken>\r
+      </web:AllLowercaseWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/AllLowercaseWithTokenRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="fe2222fe-9306-4ecf-ba88-424f8f804fa1" isOneWay="false" action="" name="AllUppercaseWithToken" bindingOperationName="AllUppercaseWithToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="fc766e55-1c0e-443f-b133-3b6b0a963433" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:AllUppercaseWithToken>\r
+         <web:sAString>Pif Paf Pouf</web:sAString>\r
+         <web:sToken>tagada tsoin tsoin</web:sToken>\r
+      </web:AllUppercaseWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/AllUppercaseWithTokenRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="193fda70-20a3-493c-886c-bd8a7317b71b" isOneWay="false" action="" name="InvertCaseFirstAdjustStringToCurrent" bindingOperationName="InvertCaseFirstAdjustStringToCurrent" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="92e4bd5e-b6c4-499d-baaf-cfa40492f48e" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:InvertCaseFirstAdjustStringToCurrent>\r
+         <web:sAString>Ceci est une jolie phrase.</web:sAString>\r
+      </web:InvertCaseFirstAdjustStringToCurrent>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/InvertCaseFirstAdjustStringToCurrentRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="d8a8ca23-e06f-4a78-aba9-f4f92628d6af" isOneWay="false" action="" name="InvertCaseFirstAdjustStringToPrevious" bindingOperationName="InvertCaseFirstAdjustStringToPrevious" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="cd74d5b2-5753-4f3e-98b2-05cee2da1d2b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:InvertCaseFirstAdjustStringToPrevious>\r
+         <web:sAString>Je fais de l'accordéon</web:sAString>\r
+      </web:InvertCaseFirstAdjustStringToPrevious>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/InvertCaseFirstAdjustStringToPreviousRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="205ce788-95ec-44de-ac10-11cfb345c78e" isOneWay="false" action="" name="InvertStringCase" bindingOperationName="InvertStringCase" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3294cbd7-c914-4e94-8cdc-ad0ea0cf11e1" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:InvertStringCase>\r
+         <web:sAString>J'aime les bonbons à la menthe!</web:sAString>\r
+      </web:InvertStringCase>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/InvertStringCaseRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="97283917-5b78-4ec5-97ee-441286fc25a0" isOneWay="false" action="" name="LowercaseWordsWithToken" bindingOperationName="LowercaseWordsWithToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="56a1f987-44cd-44c5-be10-ae203d06da91" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:LowercaseWordsWithToken>\r
+         <web:sAString>Ceci est un super exercice!</web:sAString>\r
+         <web:sToken>Je code 4 sxb</web:sToken>\r
+      </web:LowercaseWordsWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/LowercaseWordsWithTokenRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="73f94b7c-c215-404b-bf58-0c77749121c1" isOneWay="false" action="" name="TitleCaseWordsWithToken" bindingOperationName="TitleCaseWordsWithToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="49810ecd-c3be-4517-806d-27479d39bc8b" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:TitleCaseWordsWithToken>\r
+         <web:sText>Tralalalalère c'est la chanson des schtroumpfs!</web:sText>\r
+         <web:sToken>Petit homme bleu</web:sToken>\r
+      </web:TitleCaseWordsWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/TitleCaseWordsWithTokenRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="b59cf1eb-0f72-4f64-a388-50e3547d083a" isOneWay="false" action="" name="UppercaseWordsWithToken" bindingOperationName="UppercaseWordsWithToken" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="eaa020f7-3718-45e4-9f0f-3d8871e176ff" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:UppercaseWordsWithToken>\r
+         <web:sAString>Requête de l'espace</web:sAString>\r
+         <web:sToken>qui vient du turfu!</web:sToken>\r
+      </web:UppercaseWordsWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/UppercaseWordsWithTokenRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:testSuite id="3c53568a-bfb0-40b4-b072-55ca056e4bd8" name="TestSuit1"><con:settings/><con:runType>PARALLELL</con:runType><con:testCase id="d2a83024-ed80-4c0c-8de6-f3bb2db34bc1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AllLowercaseWithToken TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="aa9e3e9a-0214-4369-8361-7d25efd6f9f4" name="AllLowercaseWithToken"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>TextCasingSoapBinding</con:interface><con:operation>AllLowercaseWithToken</con:operation><con:request name="AllLowercaseWithToken" id="652c378c-30f0-4c4e-8b8e-6db6a16ba068"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:AllLowercaseWithToken>\r
+         <web:sAString>Premier essai</web:sAString>\r
+         <web:sToken>Est-ce fructueux</web:sToken>\r
+      </web:AllLowercaseWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="2a791abd-24f3-4652-9d78-64e1a95a6e70" name="Contains"><con:configuration><token>Est-ce fructueuxpEst-ce fructueuxrEst-ce fructueuxeEst-ce fructueuxmEst-ce fructueuxiEst-ce fructueuxeEst-ce fructueuxrEst-ce fructueux Est-ce fructueuxeEst-ce fructueuxsEst-ce fructueuxsEst-ce fructueuxaEst-ce fructueuxiEst-ce fructueux</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/AllLowercaseWithTokenRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="205ecdae-7bc1-4a04-9cb2-8efd274c8717" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="AllUppercaseWithToken TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="ee6ec9fd-9430-44a5-8de7-c2d545d8b5d6" name="AllUppercaseWithToken"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>TextCasingSoapBinding</con:interface><con:operation>AllUppercaseWithToken</con:operation><con:request name="AllUppercaseWithToken" id="d54ed7f8-f266-4347-9729-bdaeed51a4c5"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:AllUppercaseWithToken>\r
+         <web:sAString>Testons SOAPUI</web:sAString>\r
+         <web:sToken>Le meilleur</web:sToken>\r
+      </web:AllUppercaseWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="fdd861d3-c34a-4860-95b2-47af1396756c" name="Contains"><con:configuration><token>Le meilleurTLe meilleurELe meilleurSLe meilleurTLe meilleurOLe meilleurNLe meilleurSLe meilleur Le meilleurSLe meilleurOLe meilleurALe meilleurPLe meilleurULe meilleurILe meilleur</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/AllUppercaseWithTokenRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6e05a84f-1f3d-4fe3-9530-1cf97baa6371" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="InvertCaseFirstAdjustStringToCurrent TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="90ccd1a9-193e-4f37-87c9-f306e9c6c980" name="InvertCaseFirstAdjustStringToCurrent"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>TextCasingSoapBinding</con:interface><con:operation>InvertCaseFirstAdjustStringToCurrent</con:operation><con:request name="InvertCaseFirstAdjustStringToCurrent" id="df5c93ee-99cf-47bd-8531-3269ee012dbb"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:InvertCaseFirstAdjustStringToCurrent>\r
+         <web:sAString>Krack badaboum pif paf pouf</web:sAString>\r
+      </web:InvertCaseFirstAdjustStringToCurrent>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="cb05b594-6c47-4317-9172-84829bb8734e" name="Contains"><con:configuration><token>krack BADABOUM PIF PAF POUF</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/InvertCaseFirstAdjustStringToCurrentRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="89f9f094-9b1b-492c-aa77-bf5d982c6e48" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="InvertCaseFirstAdjustStringToPrevious TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="dfecdcb8-875a-416e-b9dd-d388208f3734" name="InvertCaseFirstAdjustStringToPrevious"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>TextCasingSoapBinding</con:interface><con:operation>InvertCaseFirstAdjustStringToPrevious</con:operation><con:request name="InvertCaseFirstAdjustStringToPrevious" id="9bc052b2-77a3-4c9f-bede-4a3d8c99d423"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:InvertCaseFirstAdjustStringToPrevious>\r
+         <web:sAString>Paraît que Sardou n'est pas mort</web:sAString>\r
+      </web:InvertCaseFirstAdjustStringToPrevious>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="2863f93c-36f6-4b7e-a90b-deb2e54c20d4" name="Contains"><con:configuration><token>Paraît que Sardou n'est pas mort</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/InvertCaseFirstAdjustStringToPreviousRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f9dd0aca-a2ee-421a-a621-6a3dfda9ef64" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="InvertStringCase TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="fb4ebd01-2187-4ff5-8c95-d8db7d70fb69" name="InvertStringCase"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>TextCasingSoapBinding</con:interface><con:operation>InvertStringCase</con:operation><con:request name="InvertStringCase" id="001e8a73-6c27-421b-9194-cb20ce175381"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:InvertStringCase>\r
+         <web:sAString>Doing monkey testing</web:sAString>\r
+      </web:InvertStringCase>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="f3be248a-e16a-41a2-9de1-69e433acbbdb" name="Contains"><con:configuration><token>dOING MONKEY TESTING</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/InvertStringCaseRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="36cd21fd-b8b3-49bd-a034-10ee0985bc93" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="LowercaseWordsWithToken TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="1efc2704-9543-4d64-af99-35b18c8e9471" name="LowercaseWordsWithToken"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>TextCasingSoapBinding</con:interface><con:operation>LowercaseWordsWithToken</con:operation><con:request name="LowercaseWordsWithToken" id="f86e8d88-3aca-43a6-a58b-aad0a78f8c3f"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:LowercaseWordsWithToken>\r
+         <web:sAString>Et maintenant une courte page de pub</web:sAString>\r
+         <web:sToken>PUBLICITEEEEEE</web:sToken>\r
+      </web:LowercaseWordsWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="f0d06a72-be0a-402f-8ec7-67af78f13195" name="Contains"><con:configuration><token>et PUBLICITEEEEEEmaintenant PUBLICITEEEEEEune PUBLICITEEEEEEcourte PUBLICITEEEEEEpage PUBLICITEEEEEEde PUBLICITEEEEEEpub</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/LowercaseWordsWithTokenRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="f5de0939-d787-4299-b0e9-41ff79ff99c2" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TitleCaseWordsWithToken TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="2c1d3ae6-61cb-4100-a0de-161a967f464a" name="TitleCaseWordsWithToken"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>TextCasingSoapBinding</con:interface><con:operation>TitleCaseWordsWithToken</con:operation><con:request name="TitleCaseWordsWithToken" id="e313f0be-8361-4182-887b-491e6c9ad70b"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:TitleCaseWordsWithToken>\r
+         <web:sText>Que vais-je manger</web:sText>\r
+         <web:sToken>Peut etres des oeufs durs</web:sToken>\r
+      </web:TitleCaseWordsWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="dde7b150-4402-40ca-b170-ed7bf91a5ed1" name="Contains"><con:configuration><token>QuePeut etres des oeufs dursVais-jePeut etres des oeufs dursManger</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/TitleCaseWordsWithTokenRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="824a6c2b-a8bf-41f3-b722-517c72088b69" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="UppercaseWordsWithToken TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="979d59c1-6dbc-44ff-9a83-50991e9aa2a4" name="UppercaseWordsWithToken"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>TextCasingSoapBinding</con:interface><con:operation>UppercaseWordsWithToken</con:operation><con:request name="UppercaseWordsWithToken" id="3b37f67f-b910-46ff-a08c-52cf6a2a36ab"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://www.dataaccess.com/webservicesserver/TextCasing.wso</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.dataaccess.com/webservicesserver/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <web:UppercaseWordsWithToken>\r
+         <web:sAString>Ce test n'est pas vert</web:sAString>\r
+         <web:sToken>puisqu'il est rouge</web:sToken>\r
+      </web:UppercaseWordsWithToken>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:assertion type="Simple Contains" id="62ac8128-cb72-49e6-9e26-f439ab522c91" name="Contains"><con:configuration><token>&lt;web:sAString>Ce test n'est pas vert&lt;/web:sAString>
+</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig action="http://www.dataaccess.com/webservicesserver/TextCasingSoapType/UppercaseWordsWithTokenRequest" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
